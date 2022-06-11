@@ -14,6 +14,7 @@ class App extends Component {
   onLeaveFeedback = e => {
     const stateKey = e.target.name;
     console.log(stateKey);
+    console.log(this.state);
     this.setState(state => ({
       [stateKey]: state[stateKey] + 1,
     }));
